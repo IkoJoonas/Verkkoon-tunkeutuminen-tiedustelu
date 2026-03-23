@@ -1,2 +1,2 @@
-## a)Vapaaehtoinen: Hei maailma. Sieppaa liikennettä WireSharkilla
+## Hei maailma
 
