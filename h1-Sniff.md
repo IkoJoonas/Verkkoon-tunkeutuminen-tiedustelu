@@ -47,3 +47,6 @@ Internet layer: IPv4
 Transport layer: TCP
 
 Application layer: TLS
+
+<img width="395" height="137" alt="Näyttökuva 2026-03-26 kello 16 22 57" src="https://github.com/user-attachments/assets/80a39655-6802-4430-8995-7a2c51629dd1" />
+
