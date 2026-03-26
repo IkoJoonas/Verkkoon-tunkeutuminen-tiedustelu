@@ -104,7 +104,7 @@ Filtteröin `dns.qry.name`, niin sain näkyville pelkät DNS kyselyt.
 
 <img width="1301" height="777" alt="Näyttökuva 2026-03-26 kello 15 59 20" src="https://github.com/user-attachments/assets/07a84596-eba8-41d6-9945-c4da6583efea" />
 
-Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla.
+Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla. gc.zgo.at 
 
 ## i) Analyysi
 
