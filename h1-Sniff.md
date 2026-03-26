@@ -30,6 +30,8 @@ Olin asentanut Kali Linux:in jo aiemmin.
 
 ## b) Ei voi kalastaa
 
+Tehävänä oli tarkoitus osoittaa, että pystyy katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
+
 Katkaisin Internet-yhteyden ja varmistin sen kokeilemalla pingaa Cloudfareen.
 
 <img width="1124" height="148" alt="Näyttökuva 2026-03-26 kello 14 58 28" src="https://github.com/user-attachments/assets/8935355b-f6e4-43ff-be8f-66e8474f1c50" />
@@ -40,6 +42,8 @@ Palautin yhteyden ja kokeilin uudelleen.
 
 ## c) Wireshark
 
+Tarkoituksena oli siepata liikennettä käyttämällä Wiresharkkia.
+
 Wireshark oli valmiiksi asennettuna.
 
 <img width="170" height="89" alt="Näyttökuva 2026-03-26 kello 14 59 45" src="https://github.com/user-attachments/assets/a78d40e4-849c-4f5c-a9de-259a91ffcc93" />
@@ -49,6 +53,8 @@ Liikenteen sieppaus:
 <img width="1433" height="807" alt="Näyttökuva 2026-03-26 kello 15 04 08" src="https://github.com/user-attachments/assets/3a035cea-8728-4ab9-8507-9dc42b492af6" />
 
 ## d) Oikeesti TCP/IP
+
+Tarkoitus oli osoittaa TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketesti.
 
 Link layer: Ethernet II
 
@@ -61,6 +67,8 @@ Application layer: TLS
 <img width="395" height="137" alt="Näyttökuva 2026-03-26 kello 16 22 57" src="https://github.com/user-attachments/assets/80a39655-6802-4430-8995-7a2c51629dd1" />
 
 ## e) Mitäs tuli surffattua?
+
+Tässä piti ladata `surfing-secure.pcap` tutustua siihen pintapuolisesti ja kuvailla millainen kaappaus on kyseessä.
 
 DNS kysely, josta vastaukseksi ip osoite 216.58.210.164 joka vie google.com
 
@@ -99,6 +107,8 @@ Filtteröin `dns.qry.name`, niin sanoin näkyville pelkät DNS kyselyt.
 Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla.
 
 ## i) Analyysi
+
+Tarkoitus siepata pieni määrä omaa liikennettä ja analysoida sitä
 
 1. Ping request
 
