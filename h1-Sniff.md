@@ -54,9 +54,9 @@ Application layer: TLS
 
 DNS kysely, josta vastaukseksi ip osoite 216.58.210.164 joka vie google.com
 
-DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.com
-
-
 <img width="1244" height="122" alt="Näyttökuva 2026-03-26 kello 15 21 00" src="https://github.com/user-attachments/assets/d6aeea46-b415-44a0-af90-9d2bb7f2ad6e" />
 
-DNS kysely
+DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.com
+
+<img width="1300" height="255" alt="Näyttökuva 2026-03-26 kello 15 23 07" src="https://github.com/user-attachments/assets/f6c2a67a-5d18-4778-b47a-476958738a64" />
+
