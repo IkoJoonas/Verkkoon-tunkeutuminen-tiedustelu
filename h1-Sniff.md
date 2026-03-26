@@ -60,3 +60,16 @@ DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.c
 
 <img width="1300" height="255" alt="Näyttökuva 2026-03-26 kello 15 23 07" src="https://github.com/user-attachments/assets/f6c2a67a-5d18-4778-b47a-476958738a64" />
 
+Kaikki protokollat joita käytettiin: IPv4, QUIC, DNS, TCP, TSL ja ARP.
+
+<img width="1044" height="284" alt="Näyttökuva 2026-03-26 kello 15 27 17" src="https://github.com/user-attachments/assets/3a0c3254-37c2-48f8-b155-f65935f6a533" />
+
+Pakettien määrä: 283
+
+Kaappaus kesti 7 sekunttia
+
+<img width="873" height="775" alt="Näyttökuva 2026-03-26 kello 15 28 35" src="https://github.com/user-attachments/assets/28b19af5-fc2f-4c6f-b739-b84d5757aa44" />
+
+TCP virhe.
+
+<img width="968" height="755" alt="Näyttökuva 2026-03-26 kello 15 29 41" src="https://github.com/user-attachments/assets/a127a649-c018-4fda-903e-ce7fc8c4fa46" />
