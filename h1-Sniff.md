@@ -73,3 +73,30 @@ Kaappaus kesti 7 sekunttia
 TCP virhe.
 
 <img width="968" height="755" alt="Näyttökuva 2026-03-26 kello 15 29 41" src="https://github.com/user-attachments/assets/a127a649-c018-4fda-903e-ce7fc8c4fa46" />
+
+## g) Minkä merkkinen verkkokortti käyttäjällä on?
+
+En löytänyt verkkokortin valmistajaa, joten voisiko kyseessä olla virtuaalikone?
+
+<img width="573" height="501" alt="Näyttökuva 2026-03-26 kello 15 53 55" src="https://github.com/user-attachments/assets/35ee98b3-e3e5-438d-8c7e-ea72013480da" />
+
+## h) Millä weppipalvelimella käyttäjä on surffailut?
+
+Filtteröin `dns.qry.name`, niin sanoin näkyville pelkät DNS kyselyt.
+
+<img width="1301" height="777" alt="Näyttökuva 2026-03-26 kello 15 59 20" src="https://github.com/user-attachments/assets/07a84596-eba8-41d6-9945-c4da6583efea" />
+
+Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla.
+
+## i) Analyysi
+
+1. Ping request
+
+2. Ping reply
+
+Protokollat: ICMP, QUIC ja ARP
+
+Pingi tehty osoitteeseen 1.1.1.1 eli Cloudfare
+
+<img width="1296" height="780" alt="Näyttökuva 2026-03-26 kello 16 06 27" src="https://github.com/user-attachments/assets/cad6d13e-feaf-4122-976d-9766ed2d42ff" />
+
