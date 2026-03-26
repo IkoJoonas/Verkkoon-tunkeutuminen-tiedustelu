@@ -74,7 +74,7 @@ DNS kysely, josta vastaukseksi ip osoite 216.58.210.164 joka vie google.com
 
 <img width="1244" height="122" alt="Näyttökuva 2026-03-26 kello 15 21 00" src="https://github.com/user-attachments/assets/d6aeea46-b415-44a0-af90-9d2bb7f2ad6e" />
 
-DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.com
+DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.com. gc.zgo.at on terokarvinen.com liittyävä analytiikka sivusto GoatCounter.
 
 <img width="1300" height="255" alt="Näyttökuva 2026-03-26 kello 15 23 07" src="https://github.com/user-attachments/assets/f6c2a67a-5d18-4778-b47a-476958738a64" />
 
@@ -104,7 +104,7 @@ Filtteröin `dns.qry.name`, niin sain näkyville pelkät DNS kyselyt.
 
 <img width="1301" height="777" alt="Näyttökuva 2026-03-26 kello 15 59 20" src="https://github.com/user-attachments/assets/07a84596-eba8-41d6-9945-c4da6583efea" />
 
-Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla. gc.zgo.at 
+Käyttäjä on käynyt google.com ja terokarvinen.com sivuilla.
 
 ## i) Analyysi
 
