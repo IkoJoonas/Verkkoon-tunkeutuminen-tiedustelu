@@ -50,3 +50,13 @@ Application layer: TLS
 
 <img width="395" height="137" alt="Näyttökuva 2026-03-26 kello 16 22 57" src="https://github.com/user-attachments/assets/80a39655-6802-4430-8995-7a2c51629dd1" />
 
+## e) Mitäs tuli surffattua?
+
+DNS kysely, josta vastaukseksi ip osoite 216.58.210.164 joka vie google.com
+
+DNS kysely, josta vastaukseksi ip osoite 139.162.131.217 joka vie terokarvinen.com
+
+
+<img width="1244" height="122" alt="Näyttökuva 2026-03-26 kello 15 21 00" src="https://github.com/user-attachments/assets/d6aeea46-b415-44a0-af90-9d2bb7f2ad6e" />
+
+DNS kysely
