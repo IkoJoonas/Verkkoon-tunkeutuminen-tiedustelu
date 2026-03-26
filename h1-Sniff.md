@@ -120,3 +120,8 @@ Pingi tehty osoitteeseen 1.1.1.1 eli Cloudfare
 
 <img width="1296" height="780" alt="Näyttökuva 2026-03-26 kello 16 06 27" src="https://github.com/user-attachments/assets/cad6d13e-feaf-4122-976d-9766ed2d42ff" />
 
+## Lähteet
+
+Karvinen 2025: https://terokarvinen.com/wireshark-getting-started/
+
+Karvine 2025: https://terokarvinen.com/network-interface-linux/
