@@ -12,6 +12,16 @@ Levytila: 40GB
 
 CPU: 2 
 
+## x) Lue ja tiivistä
+
+Karvinen 2025: https://terokarvinen.com/wireshark-getting-started/
+
+- Tilastot kohdasta näkee nopeasti mm. päätepisteet 
+
+Karvine 2025: https://terokarvinen.com/network-interface-linux/
+
+- Verkkoliitäntä ei välttämättä ole fyysinen
+
 ## a) Linux
 
 Olin asentanut Kali Linux jo aiemmin.
