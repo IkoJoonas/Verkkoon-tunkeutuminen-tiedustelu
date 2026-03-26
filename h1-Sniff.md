@@ -30,7 +30,7 @@ Olin asentanut Kali Linux:in jo aiemmin.
 
 ## b) Ei voi kalastaa
 
-Tehävänä oli tarkoitus osoittaa, että pystyy katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
+Tehtävän tarkoitus oli osoittaa, että pystyy katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
 Katkaisin Internet-yhteyden ja yritin pingata Cloudfareen. Tämä ei onnistunut.
 
