@@ -38,3 +38,7 @@ Liikenteen sieppaus:
 
 <img width="1433" height="807" alt="Näyttökuva 2026-03-26 kello 15 04 08" src="https://github.com/user-attachments/assets/3a035cea-8728-4ab9-8507-9dc42b492af6" />
 
+## d) Oikeesti TCP/IP
+
+<img width="1325" height="730" alt="Näyttökuva 2026-03-26 kello 15 10 46" src="https://github.com/user-attachments/assets/795f17bd-5b80-492a-95eb-bec900b47232" />
+<img width="1321" height="736" alt="Näyttökuva 2026-03-26 kello 15 11 02" src="https://github.com/user-attachments/assets/fa5a4e44-5489-4005-aa0e-1440fd1cc8de" />
