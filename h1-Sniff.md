@@ -24,7 +24,7 @@ Karvine 2025: https://terokarvinen.com/network-interface-linux/
 
 ## a) Linux
 
-Olin asentanut Kali Linux jo aiemmin.
+Olin asentanut Kali Linux:in jo aiemmin.
 
 <img width="903" height="661" alt="Näyttökuva 2026-03-26 kello 16 10 58" src="https://github.com/user-attachments/assets/7f135f1f-36ab-4fd9-8a7f-821adcbdfe1a" />
 
