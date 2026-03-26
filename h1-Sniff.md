@@ -32,11 +32,11 @@ Olin asentanut Kali Linux:in jo aiemmin.
 
 Tehävänä oli tarkoitus osoittaa, että pystyy katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
-Katkaisin Internet-yhteyden ja varmistin sen kokeilemalla pingaa Cloudfareen.
+Katkaisin Internet-yhteyden ja yritin pingata Cloudfareen. Tämä ei onnistunut.
 
 <img width="1124" height="148" alt="Näyttökuva 2026-03-26 kello 14 58 28" src="https://github.com/user-attachments/assets/8935355b-f6e4-43ff-be8f-66e8474f1c50" />
 
-Palautin yhteyden ja kokeilin uudelleen.
+Palautin yhteyden ja kokeilin uudelleen. Verkkoyhteys oli taas päällä.
 
 <img width="1157" height="290" alt="Näyttökuva 2026-03-26 kello 14 57 55" src="https://github.com/user-attachments/assets/547750c5-68e3-49a6-b977-eb3c2331b4e4" />
 
