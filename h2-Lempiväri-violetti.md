@@ -158,11 +158,11 @@ joepg
 
 ## Lähteet
 
-https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti
 
-https://httpd.apache.org/docs/2.4/logs.html#accesslog
 
-https://nmap.org/book/man-misc-options.html
+- Apache logs documentation: https://httpd.apache.org/docs/2.4/logs.html#accesslog
 
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method
+- Nmap documentation for Miscellaneous options: https://nmap.org/book/man-misc-options.html
+
+- Access-Control-Request-Method header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method
 
