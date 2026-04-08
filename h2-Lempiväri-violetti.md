@@ -65,3 +65,104 @@ Aloitin skannaamisen komennolla:
 OS details: Linux 5.0 - 6.2` on käyttöjärjestelmä.
 
 `Network distance: 0 hops` on sama tietokone eli localhost.
+
+## c) Skriptit. Mitkä skriptit olivat automaattisesti päällä, kun käytit "-A" parametria? (Näkyy avoimien porttinumeroiden alta, http-blah, http-blöh...).
+
+`-A` on agressiivinen skannaus, johon kuuluu parametrit:
+
+`-o` on käyttäjärjestelmän havainnointi
+
+`-sV` on version skannaus
+
+`-sC` on skriptien skannaus
+
+`-traceroute` näyttää reitin minkä kautta paketit kulkeutuvat hostille
+
+## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
+
+Tarkastelin logeja uudestaan.
+
+<img width="1178" height="747" alt="Näyttökuva 2026-04-07 kello 14 04 48" src="https://github.com/user-attachments/assets/8e3a5372-c46e-4810-abc4-25e98fc2b5bf" />
+
+Nmap oli lähettänyt paljon erilaisia pyyntöjä mm. GET, POST ja OPTIONS.
+
+Jos loki olisi laajempi voisi käyttää komentoja `grep -E 'nmap|Nmap'` tarkastelemiseen.
+
+## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
+
+Käynnistin Wiresharkin ja sieppasin verkkoliikenteen.
+
+Filtteröin näyttämään vain paketit joissa on sana "nmap" kirjoittamalla `Display filter` osioon `frame contains "nmap"`.
+
+<img width="1436" height="775" alt="Näyttökuva 2026-04-07 kello 14 23 58" src="https://github.com/user-attachments/assets/6bc18119-9d5d-4a99-bdd0-18682b93bf3e" />
+
+Nmap oli lähettänyt lukuisia pyyntöjä kuten GET /robots.txt , OPTIONS, POST ja PROPFIND.
+
+Jokaisesta löytyi User-Agentin kohdasta, että nmap:iä on käytetty.
+
+<img width="1072" height="278" alt="Näyttökuva 2026-04-07 kello 14 28 01" src="https://github.com/user-attachments/assets/93732792-9e67-4613-8574-a838c453e86f" />
+
+## f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
+
+Aloitin verkkoliikenteen sieppaamisen käyttämällä komentoa `sudo ngrep -d lo -i nmap`
+
+Tämän jälkeen avasin toisen shellin ja ajoin komennon `sudo nmap -A -p 80 localhost`
+
+Ngrep sai kaapattua paljon liikennettä, mutta laitan tänne vain yhden kaappauksen, koska tiedoissa vaikutti olevan toistuvuutta.
+
+<img width="763" height="650" alt="Näyttökuva 2026-04-07 kello 14 36 26" src="https://github.com/user-attachments/assets/006c8d2f-56f1-418b-85b0-0c6abf171b8e" />
+
+`Access-Control-Request-Method` kertoo tulevien http-pyyntöjen metodit.
+
+## g) Agentti. Vaihda nmap:n user-agent niin, että se näyttää tavalliselta weppiselaimelta.
+
+Vaihdoin user-agenttia komennolla `sudo nmap localhost -A -p 80 -script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"`
+
+Tarkastelin logeja ja agentin muuttaminen oli onnistunut.
+
+<img width="1211" height="767" alt="Näyttökuva 2026-04-07 kello 14 49 52" src="https://github.com/user-attachments/assets/e5da522a-b853-46c3-b6a0-6fe2a162fb54" />
+
+## h) Pienemmät jäljet. Porttiskannaa weppipalvelimesi uudelleen localhost-osoitteella. Tarkastele sekä Apachen lokia että siepattua verkkoliikennettä. Mikä on muuttunut, kun vaihdoit user-agent:n? Löytyykö lokista edelleen tekstijono "nmap"?
+
+Aloitin Wiresharkilla sieppaammisen ja käytin taas komentoa `sudo nmap localhost -A -p 80 -script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"`
+
+Tein filtteröinnin ja nyt olikin näkyvissä vain yksi nmap kohta ja User-Agent oli muuttunut viime kerrasta.
+
+<img width="1440" height="458" alt="Näyttökuva 2026-04-07 kello 14 56 26" src="https://github.com/user-attachments/assets/47255a43-e22c-44c8-a8df-3fc87c5ce1c4" />
+
+## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
+
+Menin polkuun `/usr/share/nmap/` ja hain rivejä kommennolla `grep -ir "nmaplowercheck"` aikaisemman Wireshark tuloksen perusteella.
+
+<img width="738" height="65" alt="Näyttökuva 2026-04-07 kello 15 00 27" src="https://github.com/user-attachments/assets/6a6348ec-4271-4c43-8214-ff627b44461a" />
+
+Nanoa käyttäen lähdin muokkaamaan tiedostoa ja pitkän etsinnän jälkeen löysin kohdan joka oli näkynyt aiemmin.
+
+<img width="624" height="83" alt="Näyttökuva 2026-04-07 kello 15 16 44" src="https://github.com/user-attachments/assets/f7ec6a3b-52fe-437c-ac20-049153772543" />
+
+Muokkasin seuraavanlaisesti:
+
+<img width="643" height="87" alt="Näyttökuva 2026-04-07 kello 15 40 24" src="https://github.com/user-attachments/assets/470bee9e-5d7a-4fcc-906f-a9c9025bab6a" />
+
+Kokeilin olinko saanut siten, että nmap ei näy enää. Nollasin lokit kommennolla `sudo truncate -s 0 /var/log/apache2/access.log` ja tein skannauksen `sudo nmap localhost -A -p 80 -script-args http.useragent="BSD experimental on XBox350 alpha (emulated on Nokia 3110)"`
+
+<img width="986" height="215" alt="Näyttökuva 2026-04-07 kello 15 44 46" src="https://github.com/user-attachments/assets/f45e8d29-f420-40ac-95e9-ac69c1be9bfd" />
+
+<img width="1199" height="134" alt="Näyttökuva 2026-04-07 kello 15 48 56" src="https://github.com/user-attachments/assets/35fdbd36-5c72-4a9c-a35c-b4820bce2b4c" />
+
+Olin onnistunut.
+
+## j) FCC ID. Etsi valitsemasi langattoman laitteen tiedot FCC ID:llä. Mitä liikenteen purkamista tai manipuloimista hyödyttävää tietoa löydät?
+
+joepg
+
+## Lähteet
+
+https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti
+
+https://httpd.apache.org/docs/2.4/logs.html#accesslog
+
+https://nmap.org/book/man-misc-options.html
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method
+
