@@ -154,7 +154,13 @@ Olin onnistunut.
 
 ## j) FCC ID. Etsi valitsemasi langattoman laitteen tiedot FCC ID:llä. Mitä liikenteen purkamista tai manipuloimista hyödyttävää tietoa löydät?
 
-joepg
+Laitteeksi otin Jbl Go Essentialin, laitteen pohjasta löytyi teksti `FCC ID:APIJBLGOETL`.
+
+Syötin nämä FCC sivulle
+
+<img width="420" height="321" alt="jbl2" src="https://github.com/user-attachments/assets/407397e3-8293-40cf-ac1e-0f93be6cd809" />
+
+
 
 ## Lähteet
 
