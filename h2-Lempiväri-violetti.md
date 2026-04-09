@@ -76,13 +76,13 @@ OS details: Linux 5.0 - 6.2` on käyttöjärjestelmä.
 
 `-A` on agressiivinen skannaus, johon kuuluu parametrit:
 
-`-o` on käyttäjärjestelmän havainnointi
+- `-o` on käyttäjärjestelmän havainnointi
 
-`-sV` on version skannaus
+- `-sV` on version skannaus
 
-`-sC` on skriptien skannaus
+- `-sC` on skriptien skannaus
 
-`-traceroute` näyttää reitin minkä kautta paketit kulkeutuvat hostille
+- `-traceroute` näyttää reitin minkä kautta paketit kulkeutuvat hostille
 
 ## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
