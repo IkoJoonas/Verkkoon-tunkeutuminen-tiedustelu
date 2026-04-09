@@ -14,7 +14,13 @@ CPU: 2
 
 ## x)
 
-frjpoeäf
+- Bianco 2013: Pyramid of Pain
+
+  Pyramidi kuvastaa, että mitä korkeamman tason indikaattori torjutaan, sitä enemmmän se aiheuttaa hankaluuksia hyökkääjälle.
+
+- Caltagirone et al 2013: Diamond Model
+
+  Timanttimallin idea on analysoida kokonaiskuvaa hyökkäyksestä. Osa-alueina toimii hyökkääjä, toiminnallisuus, infra ja kohde.
 
 ## a) Apache log. Asenna Apache-weppipalvelin paikalliselle virtuaalikoneellesi. Surffaa palvelimellesi salaamattomalla HTTP-yhteydellä, http://localhost . Etsi omaa sivulataustasi vastaava lokirivi. Analysoi yksi tällainen lokirivi, eli selitä sen kaikki kohdat. (Jos Apache ei ole kovin tuttu, voit tätä tehtävää varten vain asentaa sen ja testata oletusweppisivulla. Eli ei tarvitse tehdä omia kotisvuja tms.)
 
@@ -160,11 +166,16 @@ Syötin nämä FCC sivulle
 
 <img width="420" height="321" alt="jbl2" src="https://github.com/user-attachments/assets/407397e3-8293-40cf-ac1e-0f93be6cd809" />
 
+Tulokseksi sain paljon hyödyllistä tietoa, kuten sisäiset ja ulkoiset kuvat.
+
+<img width="691" height="271" alt="jbl1" src="https://github.com/user-attachments/assets/2f9f1101-ca4a-4b27-971b-a63abf2fb3be" />
 
 
 ## Lähteet
 
+- Bianco 2013: Pyramid of Pain: https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
 
+- FCC: https://www.fcc.gov/
 
 - Apache logs documentation: https://httpd.apache.org/docs/2.4/logs.html#accesslog
 
