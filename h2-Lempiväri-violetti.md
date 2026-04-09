@@ -92,7 +92,7 @@ Tarkastelin logeja uudestaan.
 
 Nmap oli lähettänyt paljon erilaisia pyyntöjä mm. GET, POST ja OPTIONS.
 
-Jos loki olisi laajempi voisi käyttää komentoja `grep -E 'nmap|Nmap'` tarkastelemiseen.
+Jos loki olisi laajempi voisi käyttää komentoa `grep -E 'nmap|Nmap'` tarkastelemiseen.
 
 ## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
 
