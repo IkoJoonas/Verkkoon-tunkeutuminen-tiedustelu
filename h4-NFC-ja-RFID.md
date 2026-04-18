@@ -8,10 +8,15 @@ Lompakko on ns. tavallinen lompakko eli sitä ei ole suojattu mitenkään RFID v
 APDU (Application Protocol Data Unit) on ISO/IEC 7816 -standardin mukainen viestintäprotokolla, jota käytetään älykorttisovellusten kanssa.
 
 `CLA` = komentoluokka
+
 `INS` = komento itse
+
 `P1 ja P2` = komentojen parametrit
+
 `Lc` = datan pituus
+
 `Data` = lähetettävä data
+
 `Le` = kuinka monta tavua odotetaan vastauksessa
 
 ## 3. RFID uutinen
