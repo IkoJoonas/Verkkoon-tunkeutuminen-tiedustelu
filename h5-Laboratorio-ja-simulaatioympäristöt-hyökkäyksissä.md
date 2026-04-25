@@ -160,4 +160,7 @@ Komento loi kymmeniä simulaatioita, joissa isäntäkoneet vuorotellen suorittiv
 ## Lähteet
 
 - Network-Security-Lab: https://github.com/ssam246/Network-Security-Lab
+- Download/Get Started With Mininet: https://mininet.org/download/
+- MobaXterm: https://mobaxterm.mobatek.net/
 - Moodle
+- ChatGPT selittämään miten tekniikat toimivat
