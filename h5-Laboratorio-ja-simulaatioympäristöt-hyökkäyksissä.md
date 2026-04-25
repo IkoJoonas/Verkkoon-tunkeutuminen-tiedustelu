@@ -62,6 +62,28 @@ Avasin h3 koneelle terminaalin komennolla `xterm h3` ja kytkin päälle IP Forwa
 
 <img width="550" height="59" alt="Sieppaa6" src="https://github.com/user-attachments/assets/4b98ba07-44ca-47c5-82c1-65be63df1446" />
 
-Seuraavaksi ohjasin h3 koneelle portin 22 tulevan liikenteen kulkeutumaan ulos myös portista 22, mikä tarkoittaa, että kone toimii nyt man-in-the-middle.
+Seuraavaksi ohjasin h3 koneelle portin 22 tulevan liikenteen kulkeutumaan ulos myös portista 22, mikä tarkoittaa, että kone toimii nyt man-in-the-middle. Käytin komentoa `iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 22`.
 
+Aloitin h3 verkkoliikenteen kuuntelun.
 
+<img width="567" height="70" alt="Sieppaa7" src="https://github.com/user-attachments/assets/fa002c36-e6c0-4a44-beb2-64898f7140a0" />
+
+Asensin sshesame:n komennolla `sudo apt install sshesame`.
+
+Käynnistin sen.
+
+<img width="566" height="79" alt="Sieppaa8" src="https://github.com/user-attachments/assets/5904cf8b-3750-4dcc-9f61-0cdb66365a8d" />
+
+Jätin taustalle ja avasin uuden terminaalin h3.
+
+Suoritin komennon `python3 ./arp_poison.py` joka muuttaa verkon laitteiden ARP-tauluja.
+
+Menin takaisin h1 terminaaliin ja otin SSH-yhteyden h2 koneelle.
+
+Takaisin h3 terminaalissa, jossa sshesame oli käynnissä näkyi lokitietoja mm. salasana.
+
+<img width="567" height="210" alt="Sieppaa9" src="https://github.com/user-attachments/assets/afc0f5cc-7a5e-4a08-9e21-db696d15e8b1" />
+
+Tarkastin ARP-taulun uudelleen ja siellä oli tapahtunut muutos koneen h2 MAC-osoitteessa.
+
+<img width="570" height="93" alt="Sieppaa10" src="https://github.com/user-attachments/assets/44e2f35e-b9e0-4c6d-b509-02952f18a327" />
