@@ -90,7 +90,7 @@ Tarkastin ARP-taulun uudelleen ja siellä oli tapahtunut muutos koneen h2 MAC-os
 
 ## b) ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
 
-ICMP Spoofing
+ICMP Spoofing = Hyökkääjä lähettää ICMP-paketteja (Internet Control Message Protocol), mutta väärentää lähettäjän IP-osoitteen.
 
 Käynnistin verkko-ohjaimen ja mininet uudestaan.
 
@@ -114,7 +114,7 @@ Seuraavaksi avasin toisen h1 terminaalin ja suoritin komennon `python3 ./spoof_i
 
 Nyt ICMP echo-reply on kaksi peräkkäin, koska `spoof_icmp.py` lähettää lisäksi oman echo viestin h2 koneelle.
 
-TCP Session Hijacking
+TCP Session Hijacking = Hyökkääjä ottaa haltuunsa olemassa olevan TCP-yhteyden kahden osapuolen välillä.
 
 Käynnistin verkko-ohjaimen ja mininet uudestaan.
 
@@ -141,4 +141,23 @@ Ja toisessa TCP-yhteyden kaappauksen komennolla `python3 ./tcp_hijack.py`.
 <img width="509" height="50" alt="2Sieppaa4" src="https://github.com/user-attachments/assets/ebf184e7-f621-4aa2-b0d7-56868d25b2af" />
 
 
-## c) TCP SYN-Flood-hyökkäys
+## c) 02-SDN-DDos_Simulation tryout TCP SYN-Flood-hyökkäys
+
+TCP SYN-Flood-hyökkäys = TCP SYN flood on palvelunestohyökkäys (DoS), jossa kohdejärjestelmä ylikuormitetaan lähettämällä valtava määrä TCP-yhteyden aloituspyyntöjä (SYN), mutta yhteyttä ei koskaan viimeistellä.
+
+Menin kansioon `/labs/02-SDN_DDoS_Simulation-tryout/`.
+
+Käynnistin verkon komennolla `sudo python3 simple_tree_top.py`.
+
+Ajoin hyökkäyksen komennolla `sudo python3 tree_topology.py`.
+
+<img width="456" height="137" alt="3Sieppaa" src="https://github.com/user-attachments/assets/fc90fdcb-e7ef-42c0-a865-9e72d4c7debd" />
+
+<img width="452" height="64" alt="3Sieppaa1" src="https://github.com/user-attachments/assets/2509efc3-f2dc-4b04-bd62-e1562c7dd6e1" />
+
+Komento loi kymmeniä simulaatioita, joissa isäntäkoneet vuorotellen suorittivat hyökkäyksiä ja lähettivät normaaleja pyyntöjä.
+
+## Lähteet
+
+- Network-Security-Lab: https://github.com/ssam246/Network-Security-Lab
+- Moodle
