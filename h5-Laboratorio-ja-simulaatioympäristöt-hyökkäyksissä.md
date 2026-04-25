@@ -12,6 +12,8 @@ En saanut Moodlesta ladattua Mininettiä linkin kautta joten asensin sen alusta 
 
 `sudo apt install tar`
 
+Asensin MobaXtermin SSH-yhteyden ottoon.
+
 SSH-yhteyden saamisessa ja Xtermin käynnistämisessä oli myös ongelmia, mutta sain toimimaan käyttämällä:
 
 `xhost +local:`
