@@ -87,3 +87,58 @@ Takaisin h3 terminaalissa, jossa sshesame oli käynnissä näkyi lokitietoja mm.
 Tarkastin ARP-taulun uudelleen ja siellä oli tapahtunut muutos koneen h2 MAC-osoitteessa.
 
 <img width="570" height="93" alt="Sieppaa10" src="https://github.com/user-attachments/assets/44e2f35e-b9e0-4c6d-b509-02952f18a327" />
+
+## b) ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat.
+
+ICMP Spoofing
+
+Käynnistin verkko-ohjaimen ja mininet uudestaan.
+
+`ryu-manager ryu.app.simple_switch_13`
+
+`sudo -E mn --topo single,3 --mac --switch ovsk --controller remote`
+
+Avasin terminaalit h1 ja h2.
+
+Tarkistin koneen h1 IP-osoitteen, jotta pystyn pingata siihen koneelta h2. IP oli 10.0.0.1
+
+Aloitin h2 pingin koneelle h1 `ping 10.0.0.1` ja samalla suoritin h1 komennon `python3 ./sniff_icmp.py`
+
+<img width="512" height="67" alt="2Sieppaa" src="https://github.com/user-attachments/assets/8a9d5144-f61a-4f46-ab59-db31acc7aeaf" />
+
+ICMP echo-request tulee osoitteesti 10.0.0.2 eli koneesta h2.
+
+Seuraavaksi avasin toisen h1 terminaalin ja suoritin komennon `python3 ./spoof_icmp.py` samalla, kun toisessa h1 terminaalissa oli `python3 ./sniff_icmp.py` käynnissä ja h2 `ping 10.0.0.1`.
+
+<img width="515" height="93" alt="2Sieppaa1" src="https://github.com/user-attachments/assets/5a2ffd71-a9a2-4c81-bca7-01cb2b1cf1b1" />
+
+Nyt ICMP echo-reply on kaksi peräkkäin, koska `spoof_icmp.py` lähettää lisäksi oman echo viestin h2 koneelle.
+
+TCP Session Hijacking
+
+Käynnistin verkko-ohjaimen ja mininet uudestaan.
+
+`ryu-manager ryu.app.simple_switch_13`
+
+`sudo -E mn --topo single,3 --mac --switch ovsk --controller remote`
+
+Avasin terminaalit h1, h2 ja kaksi h3.
+
+Käynnistin h1 terminaaliin palvelimen komennolla `python3 ./tcp_server.py`.
+
+<img width="503" height="40" alt="2Sieppaa2" src="https://github.com/user-attachments/assets/695d96dd-fc0a-4b49-a768-c628c335011b" />
+
+Ja h2 terminaaliin clientin komennolla `python3 ./tcp_client.py`.
+
+<img width="511" height="52" alt="2Sieppaa3" src="https://github.com/user-attachments/assets/e1c2d821-51fc-4d5e-a651-7e58339baa1e" />
+
+Toisessa h3 terminaalissa käynnistin kuuntelun komennolla `python3 ./sniff_tcp_session.py`.
+
+<img width="553" height="39" alt="2Sieppaa5" src="https://github.com/user-attachments/assets/819de544-3f41-491f-8f1c-502e62fe01b1" />
+
+Ja toisessa TCP-yhteyden kaappauksen komennolla `python3 ./tcp_hijack.py`.
+
+<img width="509" height="50" alt="2Sieppaa4" src="https://github.com/user-attachments/assets/ebf184e7-f621-4aa2-b0d7-56868d25b2af" />
+
+
+## c) TCP SYN-Flood-hyökkäys
