@@ -19,3 +19,9 @@ Osiossa opin langattomien verkkojen tunnistamista ja tietojen keräämistä. Kä
 ## c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
 
 Suhtautumiseni muuttui siten, että alkuun olin ajatellut WEP-salauksen olevan vahvempi mitä se todellisuudessa on. Piilotettu SSID ei myöskään tarjoa juuri lainkaan todellista suojaa.
+
+## Lähteet
+
+Walkthrough WiFiChallenge Lab v2.0: https://r4ulcl.com/posts/walkthrough-wifichallenge-lab-2.0/#00-what-is-the-contents-of-the-file-rootflagtxt-on-thevm
+
+Luento materiaalin diat
