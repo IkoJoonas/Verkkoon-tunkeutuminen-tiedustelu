@@ -7,5 +7,8 @@ Tutuistuin harjoituksiin tekemällä `Introduction` ja `Recon` osiot
 - `WEP-hyökkäys` = 
 Verkkokortti asetetaan kuuntelemaan ympäristöä, jonka jälkeen valittuun kohdeverkkoon tuotetaan keinotekoisesti liikennettä. Kun paketteja on kertynyt riittävästi, salausavain voidaan johtaa laskennallisesti.
 
+- `PSK-hyökkäys` = 
+Hyökkäys kohdistuu asiakkaan ja tukiaseman väliseen nelivaiheiseen kättelyyn. Sovitin asetetaan tarkkailutilaan ja liikenne tallennetaan. Yhteyden katkaisupaketeilla laitteet pudotetaan verkosta, jolloin uudelleen yhdistäessään ne suorittavat kättelyn, joka kaapataan. Tallennettu kättely murtautuu salasanalistaa vasten.
+
 ## b) Kirjoita raportti siitä mitä opit ja mitkä asia yllättivät sinut kun tutustuit harjoitukseen.
 
