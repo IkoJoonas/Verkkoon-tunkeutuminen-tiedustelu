@@ -14,4 +14,4 @@ Hyökkäys kohdistuu asiakkaan ja tukiaseman väliseen nelivaiheiseen kättelyyn
 
 `Recon`
 
-Osiossa opittiin tyypillistä langattomien verkkojen tunnistamista ja tietojen keräämistä. Airmon-ng toimi tyypillisenä työkaluna, millä etsittiin MAC osoitteita, Probeja sekä mdk4 hyödyntäen piilotettuja verkkoja.
+Osiossa opin langattomien verkkojen tunnistamista ja tietojen keräämistä. Käytin airmon-ng työkalua MAC osoitteiden ja Probe pyyntöjen selvittämiseen, sekä mdk4 työkalua piilotettujen verkkojen löytämiseen. Yllätyin, kuinka helposti tieto oli saatavilla oikeita työkaluja käytettynä.
