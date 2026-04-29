@@ -12,3 +12,6 @@ Hyökkäys kohdistuu asiakkaan ja tukiaseman väliseen nelivaiheiseen kättelyyn
 
 ## b) Kirjoita raportti siitä mitä opit ja mitkä asia yllättivät sinut kun tutustuit harjoitukseen.
 
+`Recon`
+
+Osiossa opittiin tyypillistä langattomien verkkojen tunnistamista ja tietojen keräämistä. Airmon-ng toimi tyypillisenä työkaluna, millä etsittiin MAC osoitteita, Probeja sekä mdk4 hyödyntäen piilotettuja verkkoja.
