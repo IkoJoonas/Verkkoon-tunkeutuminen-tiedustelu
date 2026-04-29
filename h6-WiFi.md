@@ -1,6 +1,6 @@
 ## a) Tutustu wifi challenge lab 2.1 harjoitus ympäristöön ja käytä tarvittaessa hyväksesi jo olemassa olevia ohjeita
 
-Tutuistuin harjoituksiin tekemällä `Introduction` ja `Recon` osiot
+Tutuistuin harjoituksiin tekemällä `Introduction` ja `Recon` osiot.
 
 <img width="1354" height="521" alt="recon" src="https://github.com/user-attachments/assets/dcc7342e-01ab-4988-8833-fb5e54815d3f" />
 
@@ -15,3 +15,7 @@ Hyökkäys kohdistuu asiakkaan ja tukiaseman väliseen nelivaiheiseen kättelyyn
 `Recon`
 
 Osiossa opin langattomien verkkojen tunnistamista ja tietojen keräämistä. Käytin airmon-ng työkalua MAC osoitteiden ja Probe pyyntöjen selvittämiseen, sekä mdk4 työkalua piilotettujen verkkojen löytämiseen. Yllätyin, kuinka helposti tieto oli saatavilla oikeita työkaluja käytettynä.
+
+## c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
+
+Suhtautumiseni muuttui siten, että jatkossa varmasti muistaa, että vahvat salasanat, laitteiden päivitykset ja eri salaustyypit on tärkeässä roolissa Wi-Fi turvallisuudessa.
