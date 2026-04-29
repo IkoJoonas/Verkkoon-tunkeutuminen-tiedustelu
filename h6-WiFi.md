@@ -18,4 +18,4 @@ Osiossa opin langattomien verkkojen tunnistamista ja tietojen keräämistä. Kä
 
 ## c) Miten suhtautumisesi WLanin turvallisuuteen muuttui sen jälkeen kun teit harjoitukset?
 
-Suhtautumiseni muuttui siten, että jatkossa varmasti muistaa, että vahvat salasanat, laitteiden päivitykset ja eri salaustyypit on tärkeässä roolissa Wi-Fi turvallisuudessa.
+Suhtautumiseni muuttui siten, että alkuun olin ajatellut WEP-salauksen olevan vahvempi mitä se todellisuudessa on. Piilotettu SSID ei myöskään tarjoa juuri lainkaan todellista suojaa.
