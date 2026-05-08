@@ -24,4 +24,4 @@ Suhtautumiseni muuttui siten, että alkuun olin ajatellut WEP-salauksen olevan v
 
 Walkthrough WiFiChallenge Lab v2.0: https://r4ulcl.com/posts/walkthrough-wifichallenge-lab-2.0/#00-what-is-the-contents-of-the-file-rootflagtxt-on-thevm
 
-Luento materiaalin diat
+Luento materiaalin diat Moodlessa
