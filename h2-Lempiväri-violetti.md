@@ -183,3 +183,4 @@ Tulokseksi sain paljon hyödyllistä tietoa, kuten sisäiset ja ulkoiset kuvat.
 
 - Access-Control-Request-Method header: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method
 
+- Karvinen Tero. Verkkoon tunkeutuminen ja tiedustelu. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
