@@ -89,4 +89,19 @@ Avasin ohjelman ja näyttee.
 
 Valitsin vasemmalta alhaalta kohdasta `Signal view` `Demodulated`.
 
+Zoomasin ensimmäisen signaalin alkuun ja maalasin ensimmäinen nousun huipusta huippuun.
+
 <img width="1597" height="590" alt="urh2" src="https://github.com/user-attachments/assets/dd07e319-4da1-4224-992d-b14b398ccf37" />
+
+Valittuja kohtia oli 522 ja 522µs. Kysyin Claudelta mihin tätä voidaan verrata, vastaukseksi tuli 522 µs = 0,000522 sekuntia = noin puoli millisekuntia. Valo ehtii kulkea ~156 kilometriä
+Valo kulkee tyhjiössä ~300 000 km/s, joten puolessa millisekunnissa se ehtisi Helsingistä melkein Ouluun.
+
+## Lähteet
+
+- Hubacek 2019:  Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. Katsottavissa: https://youtu.be/sbqMqb6FVMY?t=199 Katsottu 8.5.2026
+
+- Cornelius 2022: Decode 433.92 MHz weather station data. Luettavissa: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html Luettu: 8.5.2026.
+
+- Karvinen Tero. Verkkoon tunkeutuminen ja tiedustelu. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+- g)-kohdassa käytetty Claude.ai, "522µs: Miten pitkä yksi raakabitti on ajassa? Kuvaile tätä aikaa vertaamalla sitä johonkin"
