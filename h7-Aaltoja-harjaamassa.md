@@ -62,3 +62,14 @@ Latasin annetun tiedoston. Vinkkien avulla päädyin kääntämään tiedoston s
 `cp Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s convertedHackRF_433.92M_2000k.cs8`
 
 <img width="755" height="371" alt="Näyttökuva 2026-05-08 kello 13 01 38" src="https://github.com/user-attachments/assets/cb631e6c-63a2-4c3f-88dd-c7c21369a692" />
+
+## e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
+
+Asensin urh:n :
+
+`sudo apt-get -y install pipx`
+
+`pipx install urh`
+
+`pipx ensurepath`
+
