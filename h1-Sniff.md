@@ -125,3 +125,5 @@ Pingi tehty osoitteeseen 1.1.1.1 eli Cloudfare
 Karvinen 2025: https://terokarvinen.com/wireshark-getting-started/
 
 Karvine 2025: https://terokarvinen.com/network-interface-linux/
+
+Karvinen Tero. Verkkoon tunkeutuminen ja tiedustelu. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
