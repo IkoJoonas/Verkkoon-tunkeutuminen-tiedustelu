@@ -33,3 +33,5 @@ RFID Smart Access Cards Allow Instant Cloning Due to Backdoor: Report: https://w
 Application Protocol Data Unit (APDU): https://www.cardlogix.com/glossary/apdu-application-protocol-data-unit-smart-card/
 
 Claude apuna kohdassa #2
+
+Karvinen Tero. Verkkoon tunkeutuminen ja tiedustelu. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
