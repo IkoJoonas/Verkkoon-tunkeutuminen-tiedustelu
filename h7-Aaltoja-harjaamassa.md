@@ -63,7 +63,7 @@ Latasin annetun tiedoston. Vinkkien avulla päädyin kääntämään tiedoston s
 
 <img width="755" height="371" alt="Näyttökuva 2026-05-08 kello 13 01 38" src="https://github.com/user-attachments/assets/cb631e6c-63a2-4c3f-88dd-c7c21369a692" />
 
-## e) Ultimate. Asenna URH, the Ultimate Radio Hacker.
+## e) Ultimate. Asenna URH, the Ultimate Radio Hacker. Tarkastele näytettä
 
 Asensin urh:n :
 
@@ -73,3 +73,20 @@ Asensin urh:n :
 
 `pipx ensurepath`
 
+Avasin ohjelman ja näyttee.
+
+<img width="1595" height="1003" alt="urh" src="https://github.com/user-attachments/assets/221c4c5b-22aa-44eb-9ebc-d78ab864db5e" />
+
+## f) Yleiskuva. Kuvaile näytettä yleisesti
+
+- Kesto: 5.48s
+- Taajuus: 433,912MHz
+- Päivämäärä: 12.4.2025
+- Kellonaika: 11.38.55
+- Lisäksi näkyy kolme kohtaa, kun kaukosäätimen nappia on painettu ja signaali on lähtenyt.
+
+## g) Bittistä.
+
+Valitsin vasemmalta alhaalta kohdasta `Signal view` `Demodulated`.
+
+<img width="1597" height="590" alt="urh2" src="https://github.com/user-attachments/assets/dd07e319-4da1-4224-992d-b14b398ccf37" />
